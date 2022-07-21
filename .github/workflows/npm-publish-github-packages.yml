@@ -3,9 +3,10 @@
 
 name: Publish to Github Packages
 
-on:
-  release:
-    types: [created]
+on: push
+#on:
+#  release:
+#    types: [created]
 
 jobs:
   build:
