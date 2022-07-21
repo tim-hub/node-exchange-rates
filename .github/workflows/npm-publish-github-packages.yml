@@ -15,8 +15,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm ci
-      - run: npm test
+      - run: pnpm i --frozen-lockfile
+      - run: pnpm test
 
   publish-gpr:
     needs: build
