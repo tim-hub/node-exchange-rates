@@ -2,7 +2,7 @@
   "name": "node-exchange-rates",
   "description": "Retrieve Euro foreign exchange reference rates from the European Central Bank",
   "author": "github.com/tim-hub",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
@@ -25,7 +25,7 @@
     "lint": "eslint --ext .ts ./lib ./test",
     "build": "tsc -p tsconfig.build.json",
     "clean": "rm -fR ./coverage ./dist",
-    "preversion": "run-s clean lint test build",
+    "preversion": "run-s clean lint build",
     "prepare": "husky install"
   },
   "dependencies": {
