@@ -2,7 +2,7 @@
   "name": "node-exchange-rates",
   "description": "Retrieve Euro foreign exchange reference rates from the European Central Bank",
   "author": "github.com/tim-hub",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
