@@ -1,17 +1,17 @@
 {
-  "name": "ecb-euro-exchange-rates",
+  "name": "node-exchange-rates",
   "description": "Retrieve Euro foreign exchange reference rates from the European Central Bank",
-  "author": "Philipp Katz <philipp@philippkatz.de>",
-  "version": "2.0.2",
+  "author": "github.com/tim-hub",
+  "version": "2.0.3",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/qqilihq/ecb-euro-exchange-rates/issues"
+    "url": "https://github.com/tim-hub/node-exchange-rates"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/qqilihq/ecb-euro-exchange-rates.git"
+    "url": "git://github.com/tim-hub/node-exchange-rates.git"
   },
   "keywords": [
     "euro",
@@ -24,7 +24,7 @@
     "test": "jest",
     "lint": "eslint --ext .ts ./lib ./test",
     "build": "tsc -p tsconfig.build.json",
-    "clean": "rimraf ./coverage ./dist",
+    "clean": "rm -fR ./coverage ./dist",
     "preversion": "run-s clean lint test build",
     "prepare": "husky install"
   },
