@@ -1,10 +1,11 @@
 # Euro Exchange Rates by ECB
 
-[![Actions Status](https://github.com/qqilihq/ecb-euro-exchange-rates/workflows/CI/badge.svg)](https://github.com/qqilihq/ecb-euro-exchange-rates/actions)
-[![codecov](https://codecov.io/gh/qqilihq/ecb-euro-exchange-rates/branch/master/graph/badge.svg)](https://codecov.io/gh/qqilihq/ecb-euro-exchange-rates)
-[![npm version](https://badge.fury.io/js/ecb-euro-exchange-rates.svg)](https://badge.fury.io/js/ecb-euro-exchange-rates)
+- [Sanic Currency Exchange Rates Api](https://github.com/tim-hub/sanic-currency-exchange-rates-api) this is a similar
+  Python fork
 
-Retrieve Euro foreign exchange reference rates from an [API](http://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html) provided by the European Central Bank. This module is intended to run on the server via Node.js, not in the browser.
+Retrieve Euro foreign exchange reference rates from
+an [API](http://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html)
+provided by the European Central Bank. This module is intended to run on the server via Node.js, not in the browser.
 
 The API provides exchange rates updated daily for the following currencies:
 
@@ -59,35 +60,10 @@ console.log('Last update: ' + result.time);
 console.log('USD: ' + result.rates.USD);
 ```
 
-Historic rates are available via `fetchHistoric90d` (fetches previous 90 days) and `fetchHistoric` (fetches **all** rates back to 1999).
-
-## Development
-
-Install NPM dependencies with `yarn`.
-
-To execute the tests, run `yarn test`.
-
-For the best development experience, make sure that your editor supports [ESLint](https://eslint.org/docs/user-guide/integrations) and [EditorConfig](http://editorconfig.org).
-
-Linting of code and commit message happens on commit via [Husky](https://github.com/typicode/husky).
-
-## Releasing to NPM
-
-Commit all changes and run the following:
-
-```shell
-$ npm login
-$ yarn version --<update_type>
-$ npm publish
-```
-
-… where `<update_type>` is one of `patch`, `minor`, or `major`. This will update the `package.json`, and create a tagged Git commit with the version number.
-
-## Contributing
-
-Pull requests are very welcome. Feel free to discuss bugs or new features by opening a new [issue](https://github.com/qqilihq/ecb-euro-exchange-rates/issues).
+Historic rates are available via `fetchHistoric90d` (fetches previous 90 days) and `fetchHistoric` (fetches **all**
+rates back to 1999).
 
 
-- - -
+---
 
-Copyright Philipp Katz, [LineUpr GmbH](http://lineupr.com), 2018 – 2022
+- [Contribution How to](./CONTRIBUTING.md)
